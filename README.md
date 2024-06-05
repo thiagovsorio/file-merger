@@ -35,10 +35,9 @@ The initial purpose was my learning of Latin. So I wanted to take two .tsv files
 Then I used [this repo](https://github.com/LukeSmithxyz/kjv/tree/master) that reads tsv files, and used it for my Latin/kjv one.
 
 ## Usage (Linux)
-It compiles in Go, so if you don't have it:
-```
-rm -rf /usr/local/go && tar -C /usr/local -xzf go1.22.4.linux-amd64.tar.gz
-```
+It compiles in Go, you can fastly install it [here](https://go.dev/doc/install).
+
+---
 Build and run:
 ```sh
 # Build
