@@ -34,14 +34,27 @@ The initial purpose was my learning of Latin. So I wanted to take two .tsv files
 
 Then I used [this repo](https://github.com/LukeSmithxyz/kjv/tree/master) that reads tsv files, and used it for my Latin/kjv one.
 
-## Usage (Linux)
-It compiles in Go, you can fastly install it [here](https://go.dev/doc/install).
-
----
+## Usage (Linux and Docker)
+With the two input files in this directory:  
 Build and run:
 ```sh
 # Build
 make 
+
+# Run
+FILE_ONE=yourFileOne.txt \
+FILE_TWO=yourFileTwo.txt \
+FILE_DEST=destinationFile.txt \
+make run
+```
+
+## Usage (Linux and Go)
+It compiles in Go, you can fastly install it [here](https://go.dev/doc/install).
+
+Build and run:
+```sh
+# Build
+make install
 
 # Run
 ./file-merger \

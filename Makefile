@@ -1,3 +1,14 @@
+docker.build.image:
+	docker build -t file-merger .
+
+run:
+	@echo ${FILE_ONE} ${FILE_TWO} ${FILE_DEST}
+	docker run -it \
+	-v ./:/app \
+	-e FILE_ONE=${FILE_ONE} \
+	-e FILE_TWO=${FILE_TWO} \
+	-e FILE_DEST=${FILE_DEST} \
+	 --rm file-merger
 install:
 	- go build -o file-merger
 
